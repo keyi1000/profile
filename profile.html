@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山田太郎 - プロフィール</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header class="header">
+            <div class="profile-image">
+                <div class="avatar">山田</div>
+            </div>
+            <div class="profile-info">
+                <h1>山田 太郎</h1>
+                <p class="title">フルスタックエンジニア志望</p>
+                <p class="university">○○大学 情報工学部 4年</p>
+            </div>
+        </header>
+
+        <!-- ナビゲーション -->
+        <nav class="navigation">
+            <button class="nav-btn active" data-tab="profile">
+                <i class="fas fa-user"></i>
+                プロフィール
+            </button>
+            <button class="nav-btn" data-tab="skills">
+                <i class="fas fa-code"></i>
+                スキル
+            </button>
+            <button class="nav-btn" data-tab="projects">
+                <i class="fas fa-briefcase"></i>
+                制作物
+            </button>
+            <button class="nav-btn" data-tab="current">
+                <i class="fas fa-target"></i>
+                現在の取り組み
+            </button>
+            <button class="nav-btn" data-tab="contact">
+                <i class="fas fa-envelope"></i>
+                コンタクト
+            </button>
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="main-content">
+            <!-- プロフィールセクション -->
+            <section id="profile" class="content-section active">
+                <div class="card">
+                    <h2>自己紹介</h2>
+                    <p>
+                        情報工学を専攻し、Web開発に情熱を注いでいます。フロントエンドからバックエンドまで幅広い技術に興味を持ち、
+                        ユーザー体験を重視したアプリケーション開発を心がけています。
+                    </p>
+                    <p>
+                        チーム開発での協調性と、新しい技術への学習意欲を持って、貴社で成長していきたいと考えています。
+                        将来的にはテックリードとして、技術面でチームを支えられるエンジニアになることが目標です。
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h2>学歴・経歴</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="year">2021年4月</div>
+                            <div class="content">○○大学 情報工学部 入学</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2023年8月</div>
+                            <div class="content">△△株式会社でインターンシップ (3ヶ月)</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2024年4月</div>
+                            <div class="content">研究室配属 - Web技術の研究</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2025年3月</div>
+                            <div class="content">卒業予定</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スキルセクション -->
+            <section id="skills" class="content-section">
+                <div class="card">
+                    <h2>技術スキル</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>フロントエンド</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>バックエンド</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>ツール・その他</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">Jest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>プログラミング言語習熟度</h2>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>TypeScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Java</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 制作物セクション -->
+            <section id="projects" class="content-section">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>ECサイト構築プロジェクト</h3>
+                        <p>React + Node.jsを使用したフルスタックのECサイト。決済機能、在庫管理、ユーザー認証を実装。</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>タスク管理アプリ</h3>
+                        <p>チーム向けのタスク管理システム。リアルタイム更新、ドラッグ&ドロップ機能を実装。</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Vuetify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>データ可視化ダッシュボード</h3>
+                        <p>Python + Streamlitを使用したデータ分析・可視化ツール。CSVアップロード機能付き。</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>レシピ共有SNS</h3>
+                        <p>ユーザーがレシピを投稿・共有できるSNSアプリ。画像アップロード、いいね機能を実装。</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="link-btn">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 現在の取り組みセクション -->
+            <section id="current" class="content-section">
+                <div class="card">
+                    <h2>現在の学習・取り組み</h2>
+                    <div class="current-activities">
+                        <div class="activity-item">
+                            <div class="activity-header">
+                                <h3>Next.js 14の学習</h3>
+                                <span class="progress-percent">75%</span>
+                            </div>
+                            <p>App Routerや新機能を習得中。個人プロジェクトで実践的に学習しています。</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-header">
+                                <h3>AWS認定試験の準備</h3>
+                                <span class="progress-percent">60%</span>
+                            </div>
+                            <p>AWS Solutions Architect Associate資格取得に向けて勉強中。</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-header">
+                                <h3>オープンソース貢献</h3>
+                                <span class="progress-percent">40%</span>
+                            </div>
+                            <p>React関連のライブラリにバグ修正やドキュメント改善で貢献しています。</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>今後の目標</h2>
+                    <ul class="goals-list">
+                        <li>フルスタック開発スキルのさらなる向上</li>
+                        <li>クラウド技術(AWS/GCP)の習得</li>
+                        <li>チーム開発でのリーダーシップ経験</li>
+                        <li>ユーザビリティを重視したUI/UX設計スキル</li>
+                        <li>アジャイル開発手法の実践経験</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- コンタクトセクション -->
+            <section id="contact" class="content-section">
+                <div class="card">
+                    <h2>連絡先</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>yamada.taro@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>電話番号</h4>
+                                <p>090-1234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="#" target="_blank">github.com/yamada-taro</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="#" target="_blank">linkedin.com/in/yamada-taro</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>ポートフォリオサイト</h4>
+                                <a href="#" target="_blank">yamada-portfolio.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>お問い合わせフォーム</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">送信する</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts/profile.js"></script>
+  </body>
+</html>
