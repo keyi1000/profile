@@ -742,5 +742,11 @@ body {
 	color: #00add8;
 	border: 1.5px solid #00add8;
 }
+.skill-tag[data-lang="gin"],
+.tech-tag[data-lang="gin"] {
+	background: #222;
+	color: #00add8;
+	border: 1.5px solid #00add8;
+}
 
 /* ...既存のCSS... */
