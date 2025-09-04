@@ -619,71 +619,128 @@ body {
 }
 /* ...既存のCSS... */
 
+/* プロジェクト詳細セクション */
+.project-details {
+	margin-bottom: 20px;
+	padding: 20px;
+	background: rgba(35, 36, 59, 0.6);
+	border-radius: 10px;
+	border: 1px solid #29294b;
+}
+
+.project-details h4 {
+	color: #bdb7f6;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #2d235c;
+	padding-bottom: 5px;
+}
+
+.project-details p {
+	color: #c9cae4;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.project-details ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.project-details ul li {
+	color: #c9cae4;
+	margin-bottom: 8px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.project-details ul li::before {
+	content: "•";
+	color: #5a4fef;
+	font-size: 1.2rem;
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+
 /* 言語イメージカラー */
-.skill-tag[data-lang="react"], .tech-tag[data-lang="react"] {
-    background: #222;
-    color: #61dafb;
-    border: 1.5px solid #61dafb;
+.skill-tag[data-lang="react"],
+.tech-tag[data-lang="react"] {
+	background: #222;
+	color: #61dafb;
+	border: 1.5px solid #61dafb;
 }
-.skill-tag[data-lang="javascript"], .tech-tag[data-lang="javascript"] {
-    background: #222;
-    color: #f7df1e;
-    border: 1.5px solid #f7df1e;
+.skill-tag[data-lang="javascript"],
+.tech-tag[data-lang="javascript"] {
+	background: #222;
+	color: #f7df1e;
+	border: 1.5px solid #f7df1e;
 }
-.skill-tag[data-lang="htmlcss"], .tech-tag[data-lang="htmlcss"] {
-    background: #222;
-    color: #e34c26;
-    border: 1.5px solid #e34c26;
+.skill-tag[data-lang="htmlcss"],
+.tech-tag[data-lang="htmlcss"] {
+	background: #222;
+	color: #e34c26;
+	border: 1.5px solid #e34c26;
 }
-.skill-tag[data-lang="nodejs"], .tech-tag[data-lang="nodejs"] {
-    background: #222;
-    color: #3c873a;
-    border: 1.5px solid #3c873a;
+.skill-tag[data-lang="nodejs"],
+.tech-tag[data-lang="nodejs"] {
+	background: #222;
+	color: #3c873a;
+	border: 1.5px solid #3c873a;
 }
-.skill-tag[data-lang="php"], .tech-tag[data-lang="php"] {
-    background: #222;
-    color: #777bb4;
-    border: 1.5px solid #777bb4;
+.skill-tag[data-lang="php"],
+.tech-tag[data-lang="php"] {
+	background: #222;
+	color: #777bb4;
+	border: 1.5px solid #777bb4;
 }
-.skill-tag[data-lang="git"], .tech-tag[data-lang="git"] {
-    background: #222;
-    color: #f34f29;
-    border: 1.5px solid #f34f29;
+.skill-tag[data-lang="git"],
+.tech-tag[data-lang="git"] {
+	background: #222;
+	color: #f34f29;
+	border: 1.5px solid #f34f29;
 }
-.skill-tag[data-lang="docker"], .tech-tag[data-lang="docker"] {
-    background: #222;
-    color: #2496ed;
-    border: 1.5px solid #2496ed;
+.skill-tag[data-lang="docker"],
+.tech-tag[data-lang="docker"] {
+	background: #222;
+	color: #2496ed;
+	border: 1.5px solid #2496ed;
 }
-.skill-tag[data-lang="aws"], .tech-tag[data-lang="aws"] {
-    background: #222;
-    color: #ff9900;
-    border: 1.5px solid #ff9900;
+.skill-tag[data-lang="aws"],
+.tech-tag[data-lang="aws"] {
+	background: #222;
+	color: #ff9900;
+	border: 1.5px solid #ff9900;
 }
-.skill-tag[data-lang="express"], .tech-tag[data-lang="express"] {
-    background: #222;
-    color: #fff;
-    border: 1.5px solid #000;
+.skill-tag[data-lang="express"],
+.tech-tag[data-lang="express"] {
+	background: #222;
+	color: #fff;
+	border: 1.5px solid #000;
 }
-.skill-tag[data-lang="linux"], .tech-tag[data-lang="linux"] {
-    background: #222;
-    color: #fcc624;
-    border: 1.5px solid #fcc624;
+.skill-tag[data-lang="linux"],
+.tech-tag[data-lang="linux"] {
+	background: #222;
+	color: #fcc624;
+	border: 1.5px solid #fcc624;
 }
-.skill-tag[data-lang="java"], .tech-tag[data-lang="java"] {
-    background: #222;
-    color: #007396;
-    border: 1.5px solid #007396;
+.skill-tag[data-lang="java"],
+.tech-tag[data-lang="java"] {
+	background: #222;
+	color: #007396;
+	border: 1.5px solid #007396;
 }
-.skill-tag[data-lang="mysql"], .tech-tag[data-lang="mysql"] {
-    background: #222;
-    color: #4479a1;
-    border: 1.5px solid #4479a1;
+.skill-tag[data-lang="mysql"],
+.tech-tag[data-lang="mysql"] {
+	background: #222;
+	color: #4479a1;
+	border: 1.5px solid #4479a1;
 }
-.skill-tag[data-lang="go"], .tech-tag[data-lang="go"] {
-    background: #222;
-    color: #00ADD8;
-    border: 1.5px solid #00ADD8;
+.skill-tag[data-lang="go"],
+.tech-tag[data-lang="go"] {
+	background: #222;
+	color: #00add8;
+	border: 1.5px solid #00add8;
 }
 
 /* ...既存のCSS... */
