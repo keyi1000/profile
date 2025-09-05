@@ -354,6 +354,38 @@ body {
 	margin-top: 8px;
 }
 
+.link-btn {
+	display: inline-block;
+	background: transparent;
+	color: #fff;
+	padding: 8px 16px;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 0.95rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.link-btn:hover {
+	background: #fff;
+	color: #1c1e2a;
+	transform: translateY(-2px);
+}
+
+.link-btn::after {
+	content: "↗";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-left: 6px;
+	vertical-align: middle;
+	opacity: 0.8;
+	font-size: 12px;
+	line-height: 1;
+}
+
 /* ===== 現在の活動 ===== */
 .activity-item {
 	margin-bottom: 30px;
