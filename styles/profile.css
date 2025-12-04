@@ -22,16 +22,19 @@ body {
 .section-tabs {
 	display: flex;
 	justify-content: center;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 	gap: 10px;
 	margin: 0 auto 40px auto;
 	background: rgba(30, 32, 48, 0.9);
 	border-radius: 16px;
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-	padding: 8px 4px;
+	padding: 8px 12px;
 	position: sticky;
 	top: 20px;
 	z-index: 100;
-	max-width: 700px;
+	max-width: 100%;
 }
 
 .tab-link {
@@ -779,6 +782,18 @@ body {
 	background: #222;
 	color: #00add8;
 	border: 1.5px solid #00add8;
+}
+.skill-tag[data-lang="python"],
+.tech-tag[data-lang="python"] {
+	background: #222;
+	color: #3776ab;
+	border: 1.5px solid #3776ab;
+}
+.skill-tag[data-lang="swift"],
+.tech-tag[data-lang="swift"] {
+	background: #222;
+	color: #fa7343;
+	border: 1.5px solid #fa7343;
 }
 
 /* ...既存のCSS... */

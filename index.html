@@ -1,302 +1,327 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>山本和樹 - プロフィール</title>
-    <link rel="stylesheet" href="styles/profile.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山本和樹 - プロフィール</title>
+  <link rel="stylesheet" href="styles/profile.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
 
-        <!-- セクションタブナビゲーション -->
-        <nav class="section-tabs">
-            <button class="tab-link active" data-scroll="#profile">
-                <i class="fas fa-user"></i> プロフィール
-            </button>
-            <button class="tab-link" data-scroll="#skills">
-                <i class="fas fa-code"></i> スキル
-            </button>
-            <button class="tab-link" data-scroll="#projects">
-                <i class="fas fa-briefcase"></i> 制作物
-            </button>
-            <button class="tab-link" data-scroll="#contact">
-                <i class="fas fa-envelope"></i> コンタクト
-            </button>
-        </nav>
+    <!-- セクションタブナビゲーション -->
+    <nav class="section-tabs">
+      <button class="tab-link active" data-scroll="#profile">
+        <i class="fas fa-user"></i> プロフィール
+      </button>
+      <button class="tab-link" data-scroll="#skills">
+        <i class="fas fa-code"></i> スキル
+      </button>
+      <button class="tab-link" data-scroll="#projects">
+        <i class="fas fa-briefcase"></i> 制作物
+      </button>
+      <button class="tab-link" data-scroll="#research">
+        <i class="fas fa-flask"></i> 研究
+      </button>
+      <button class="tab-link" data-scroll="#contact">
+        <i class="fas fa-envelope"></i> コンタクト
+      </button>
+    </nav>
 
-        <!-- ヘッダー -->
-        <header class="header">
-          <div class="profile-image">
-              <div class="avatar">
-                  <img src="img/IMG_0768.jpg"/>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="profile-image">
+        <div class="avatar">
+          <img src="img/IMG_0768.jpg" />
+        </div>
+      </div>
+      <div class="profile-info">
+        <h1>山本 和樹</h1>
+        <p class="title">2027年3月卒業見込み IT開発エキスパートコース 3年</p>
+        <p class="university">フルスタックエンジニア志望</p>
+        <p class="university">資格 : 応用情報、漢字検定2級、基本情報、ITパスポート</p>
+        <p class="university">趣味 : 雑学や豆知識などつけること(特に歴史、地理系が好きです)、ゲーム</p>
+      </div>
+    </header>
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+      <!-- プロフィールセクション -->
+      <section id="profile" class="content-section">
+        <div class="card">
+          <h2>自己紹介</h2>
+          <p>
+            ECCコンピュータ専門学校3年の山本和樹です。<br>
+            フルスタックなエンジニアを目指し、フロントエンドからバックエンドまで幅広いことに興味があり学んでいます。<br>
+            自分の強みとしても知識の領域が広く、オールラウンダーなことだと考えています。
+            チーム制作ではオールラウンダーなことを活かし、チームリーダーなどを務めることが多いです。<br>
+            現在はサーバ系を学んでおり、個人開発ではM5stackを使用したホテル向けのsmartlockシステムを制作しています。<br>
+          </p>
+      </section>
+      <section id="profile" class="content-section">
+        <div class="card">
+          <h2>将来像</h2>
+          <p>
+            将来はプロジェクトやプロダクトの企画や改善をしていきたいと考えており、BtoB、BtoC問わず多くの人に使われるようなサービスに携わりたいです。
+            そのためにも今よりも幅広い知識や技術力をつけて目標への道を進んでいきいと考えています。<br>
+            また、それで得た知識、経験を活かしT型人材となって人から頼られるようなエンジニアになりたいと考えています。<br>
+            PMなどマネージャー業にも興味があり、挑戦していきたいと考えています。
+          </p>
+      </section>
+
+      <!-- スキルセクション -->
+      <section id="skills" class="content-section">
+        <div class="card">
+          <h2>スキル</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>フロントエンド</h3>
+              <div class="skill-tags">
+                <span class="skill-tag" data-lang="react">React</span>
+                <span class="skill-tag" data-lang="react">React Native</span>
+                <span class="skill-tag" data-lang="swift">Swift</span>
+
+                <span class="skill-tag" data-lang="javascript">JavaScript</span>
+                <span class="skill-tag" data-lang="htmlcss">HTML/CSS</span>
               </div>
+            </div>
+            <div class="skill-category">
+              <h3>バックエンド</h3>
+              <div class="skill-tags">
+                <span class="skill-tag" data-lang="nodejs">Node.js</span>
+                <span class="skill-tag" data-lang="php">php</span>
+                <span class="skill-tag" data-lang="gin">Gin</span>
+                <span class="skill-tag" data-lang="python">Python</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>ツール・その他言語</h3>
+              <div class="skill-tags">
+                <span class="skill-tag" data-lang="git">Git</span>
+                <span class="skill-tag" data-lang="docker">Docker</span>
+                <span class="skill-tag" data-lang="aws">AWS</span>
+                <span class="skill-tag" data-lang="express">Express</span>
+                <span class="skill-tag" data-lang="linux">Linux</span>
+                <span class="skill-tag" data-lang="java">java</span>
+                <span class="skill-tag" data-lang="mysql">mysql</span>
+              </div>
+            </div>
           </div>
-          <div class="profile-info">
-              <h1>山本 和樹</h1>
-              <p class="title">2027年3月卒業見込み    IT開発エキスパートコース 3年</p>
-              <p class="university">フルスタックエンジニア志望</p>
-              <p class="university">資格 : 応用情報、漢字検定2級、基本情報、ITパスポート</p>
-              <p class="university">趣味 : 雑学や豆知識などつけること(特に歴史、地理系が好きです)、ゲーム</p>
-          </div>
-      </header>
-        <!-- メインコンテンツ -->
-        <main class="main-content">
-            <!-- プロフィールセクション -->
-            <section id="profile" class="content-section">
-                <div class="card">
-                    <h2>自己紹介</h2>
-                    <p>
-                        ECCコンピュータ専門学校3年の山本和樹です。<br>
-                        フルスタックなエンジニアを目指し、フロントエンドからバックエンドまで幅広いことに興味があり学んでいます。<br>
-                        自分の強みとしても知識の領域が広く、オールラウンダーなことだと考えています。
-                        チーム制作ではオールラウンダーなことを活かし、チームリーダーなどを務めることが多いです。<br>
-                        現在はサーバ系を学んでおり、個人開発ではM5stackを使用したホテル向けのsmartlockシステムを制作しています。<br>
-                    </p>
-            </section>
-            <section id="profile" class="content-section">
-              <div class="card">
-                  <h2>将来像</h2>
-                  <p>
-                      将来はプロジェクトやプロダクトの企画や改善をしていきたいと考えており、BtoB、BtoC問わず多くの人に使われるようなサービスに携わりたいです。
-                      そのためにも今よりも幅広い知識や技術力をつけて目標への道を進んでいきいと考えています。<br>
-                      また、それで得た知識、経験を活かしT型人材となって人から頼られるようなエンジニアになりたいと考えています。<br>
-                      PMなどマネージャー業にも興味があり、挑戦していきたいと考えています。
+        </div>
+      </section>
+
+      <!-- 制作物セクション -->
+      <section id="projects" class="content-section">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-layout">
+                <!-- 画像 -->
+                <img src="img/Fithub.jpg" alt="Fithub" class="project-image">
+                <!-- 説明文 -->
+                <div class="project-description">
+                  <h3 class="url-link">Fithub</h3>
+                  <p class="project-summary">
+                    エンジニア向けの健康促進、成長するアプリです。<br>
+                    エンジニアだとデスクに向かう時間が多くて、運動不足になりがち。<br>
+                    そこで自分のアプリ内のペットを育成し、ペットの成長を楽しみながら自らも成長していこう！<br>
                   </p>
-          </section>
-
-            <!-- スキルセクション -->
-            <section id="skills" class="content-section">
-                <div class="card">
-                    <h2>スキル</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>フロントエンド</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag" data-lang="react">React</span>
-                                <span class="skill-tag" data-lang="javascript">JavaScript</span>
-                                <span class="skill-tag" data-lang="htmlcss">HTML/CSS</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>バックエンド</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag" data-lang="nodejs">Node.js</span>
-                                <span class="skill-tag" data-lang="php">php</span>
-                                <span class="skill-tag" data-lang="gin">Gin</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>ツール・その他言語</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag" data-lang="git">Git</span>
-                                <span class="skill-tag" data-lang="docker">Docker</span>
-                                <span class="skill-tag" data-lang="aws">AWS</span>
-                                <span class="skill-tag" data-lang="express">Express</span>
-                                <span class="skill-tag" data-lang="linux">Linux</span>
-                                <span class="skill-tag" data-lang="java">java</span>
-                                <span class="skill-tag" data-lang="mysql">mysql</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 制作物セクション -->
-            <section id="projects" class="content-section">
-              <div class="projects-grid">
-                <div class="project-card">
-                  <div class="project-content">
-                    <div class="project-layout">
-                      <!-- 画像 -->
-                      <img src="img/Fithub.jpg" alt="Fithub" class="project-image">
-                      <!-- 説明文 -->
-                      <div class="project-description">
-                          <h3 class="url-link">Fithub</h3>
-                        <p class="project-summary">
-                          エンジニア向けの健康促進、成長するアプリです。<br>
-                          エンジニアだとデスクに向かう時間が多くて、運動不足になりがち。<br>
-                          そこで自分のアプリ内のペットを育成し、ペットの成長を楽しみながら自らも成長していこう！<br>
-                        </p>
-                        <div class="project-details">
-                          <h4>プロジェクト詳細</h4>
-                          <p>
-                            GitHubのコントリビューションと歩数を連携させ、運動(歩き)とコーディングをすることでアプリ内のペットが成長していきます。<br>
-                            具体的には、歩数でペットの健康度、GitHubのコントリビューションでペットが大きくなっていきます。<br>
-                            ミッションをクリアすることでポイントを取得し、ショップ画面でそのポイントを使用して育てたいペットと交換することができます。<br>
-                            また、他の人のペットをグループ画面で見ることがで、成長具合やペットの飼い主である他ユーザーの歩数状態やコントリビューション状況、そしてgithubプロフィールへのリンクがあります。<br>
-                          </p>
-                          <h4>主な機能</h4>
-                          <ul>
-                            <li>歩数とgithubのコントリビューションの連携</li>
-                            <li>運動・作業することでペットが成長</li>
-                            <li>他の人のペットをグループで見ることができる機能</li>
-                            <li>ミッション機能</li>
-                            <li>ショップ機能</li>
-                            <li>ミッション機能</li>
-                            <li>プロフィール閲覧機能</li>
-                          </ul>
-                        </div>
-                        <div class="tech-stack">
-                          <span class="tech-tag" data-lang="react">React Native
-                          </span>
-                          <span class="tech-tag" data-lang="nodejs">Node.js</span>
-                          <span class="tech-tag" data-lang="mysql">mysql</span>
-                          <span class="tech-tag" data-lang="express">Express</span>
-                          <span class="tech-tag" data-lang="aws">AWS</span>
-                        </div>
-                        <ul class="project-meta">
-                          <li><strong>制作区分:</strong> チーム開発</li>
-                          <li><strong>制作期間:</strong> 2025年4月〜8月</li>
-                          <li><strong>役割:</strong> サブリーダー、フロントエンド、結合、APIとDBの再設計</li>
-                          <li><strong>受賞:</strong> 敢闘賞</li>
-                        </ul>
-                        <div class="project-links">
-                          <a href="https://github.com/WEB-IT-2025" class="link-btn" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="project-details">
+                    <h4>プロジェクト詳細</h4>
+                    <p>
+                      GitHubのコントリビューションと歩数を連携させ、運動(歩き)とコーディングをすることでアプリ内のペットが成長していきます。<br>
+                      具体的には、歩数でペットの健康度、GitHubのコントリビューションでペットが大きくなっていきます。<br>
+                      ミッションをクリアすることでポイントを取得し、ショップ画面でそのポイントを使用して育てたいペットと交換することができます。<br>
+                      また、他の人のペットをグループ画面で見ることがで、成長具合やペットの飼い主である他ユーザーの歩数状態やコントリビューション状況、そしてgithubプロフィールへのリンクがあります。<br>
+                    </p>
+                    <h4>主な機能</h4>
+                    <ul>
+                      <li>歩数とgithubのコントリビューションの連携</li>
+                      <li>運動・作業することでペットが成長</li>
+                      <li>他の人のペットをグループで見ることができる機能</li>
+                      <li>ミッション機能</li>
+                      <li>ショップ機能</li>
+                      <li>ミッション機能</li>
+                      <li>プロフィール閲覧機能</li>
+                    </ul>
                   </div>
+                  <div class="tech-stack">
+                    <span class="tech-tag" data-lang="react">React Native
+                    </span>
+                    <span class="tech-tag" data-lang="nodejs">Node.js</span>
+                    <span class="tech-tag" data-lang="mysql">mysql</span>
+                    <span class="tech-tag" data-lang="express">Express</span>
+                    <span class="tech-tag" data-lang="aws">AWS</span>
+                  </div>
+                  <ul class="project-meta">
+                    <li><strong>制作区分:</strong> チーム開発</li>
+                    <li><strong>制作期間:</strong> 2025年4月〜8月</li>
+                    <li><strong>役割:</strong> サブリーダー、フロントエンド、結合、APIとDBの再設計</li>
+                    <li><strong>受賞:</strong> 敢闘賞</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/WEB-IT-2025" class="link-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-layout">
+                <!-- 画像 -->
+                <img src="img/FristChat.png" alt="FristChat" class="project-image">
+                <!-- 説明文 -->
+                <div class="project-description">
+                  <h3 class="url-link">FristChat</h3>
+                  <p class="project-summary">
+                    返信が遅い人に早く返信させるためのアプリ<br>
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag" data-lang="react">React</span>
+                    <span class="tech-tag" data-lang="nodejs">node.js</span>
+                    <span class="tech-tag" data-lang="docker">docker</span>
+                    <span class="tech-tag" data-lang="mysql">mysql</span>
+                    <span class="tech-tag" data-lang="express">Express</span>
+                  </div>
+                  <ul class="project-meta">
+                    <li><strong>制作区分:</strong> チーム開発</li>
+                    <li><strong>制作期間:</strong> 2025年3月</li>
+                    <li><strong>役割:</strong> サブリーダー、結合、プレゼン、バックエンド</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/hakyukawa" class="link-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- コンタクトセクション -->
+
+      <section id="projects" class="content-section">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-layout">
+                <!-- 画像 -->
+                <img src="img/Luxon.jpg" alt="Geocation" class="project-image">
+                <!-- 説明文 -->
+                <div class="project-description">
+                  <h3 class="url-link">Luxon</h3>
+                  <p class="project-summary">
+                    資格取得を目指し、正確性と即答力を鍛えるwebアプリ。プレイヤーと戦いゲーム形式で楽しみながら学習します。<br>
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag" data-lang="react">React</span>
+                    <span class="tech-tag" data-lang="go">Go</span>
+                    <span class="tech-tag" data-lang="aws">AWS</span>
+                    <span class="tech-tag" data-lang="mysql">mysql</span>
+                  </div>
+                  <ul class="project-meta">
+                    <li><strong>制作区分:</strong> チーム開発</li>
+                    <li><strong>制作期間:</strong> 2024年9月〜2025年2月</li>
+                    <li><strong>役割:</strong> フロントエンド、サポート</li>
+                    <li><strong>受賞:</strong> 敢闘賞</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/mod0dethink/kazuyoshi-temp-" class="link-btn" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- コンタクトセクション -->
+
+      <section id="projects" class="content-section">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-layout">
+                <!-- 画像 -->
+                <img src="img/geocation.png" alt="Geocation" class="project-image">
+                <!-- 説明文 -->
+                <div class="project-description">
+                  <h3 class="url-link">Geocation</h3>
+                  <p class="project-summary">
+                    オーバーツーリズムを解消するために他の隠れた名所を紹介するWebサイト<br>
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag" data-lang="htmlcss">HTML・css</span>
+                    <span class="tech-tag" data-lang="javascript">JavaScript</span>
+                    <span class="tech-tag" data-lang="php">php</span>
+                    <span class="tech-tag" data-lang="mysql">mysql</span>
+                    <span class="tech-tag" data-lang="docker">docker</span>
+                  </div>
+                  <ul class="project-meta">
+                    <li><strong>制作区分:</strong> チーム開発</li>
+                    <li><strong>制作期間:</strong> 2024年4月〜2024年7月</li>
+                    <li><strong>役割:</strong> リーダー、結合、要件定義、デザイン、サブリーダー</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://geocation.keyi9029.com/" class="link-btn" target="_blank">
+                      Webサイト
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!-- コンタクトセクション -->
+      <!-- 研究セクション -->
+            <section id="research" class="content-section">
+              <div class="card">
+                <h2>研究</h2>
+                <ul class="research-list">
+                  <li><strong>題名:</strong> BLEの通信技術研究と検証（暗号化、接続の仕組み）</li>
+                  <li><strong>ステータス:</strong> 研究中</li>
+                  <li><strong>期間:</strong> 10月〜</li>
+                  <li><strong>概要:</strong> BLE（Bluetooth Low Energy）通信における暗号化方式、鍵管理、接続確立と再接続のメカニズム、接続安定性を実機およびシミュレーションで評価し、セキュリティと実用性のバランスが取れた実装指針を提案することを目的とします。</li>
+                </ul>
+                <div class="research-links">
+                  <a href="中間発表.pdf" class="link-btn" target="_blank" rel="noopener">中間発表（PDF）</a>
                 </div>
               </div>
             </section>
 
-            <section id="projects" class="content-section">
-              <div class="projects-grid">
-                <div class="project-card">
-                  <div class="project-content">
-                    <div class="project-layout">
-                      <!-- 画像 -->
-                      <img src="img/FristChat.png" alt="FristChat" class="project-image">
-                      <!-- 説明文 -->
-                      <div class="project-description">
-                          <h3 class="url-link">FristChat</h3>
-                        <p class="project-summary">
-                          返信が遅い人に早く返信させるためのアプリ<br>
-                        </p>
-                        <div class="tech-stack">
-                          <span class="tech-tag" data-lang="react">React</span>
-                          <span class="tech-tag" data-lang="nodejs">node.js</span>
-                          <span class="tech-tag" data-lang="docker">docker</span>
-                          <span class="tech-tag" data-lang="mysql">mysql</span>
-                          <span class="tech-tag" data-lang="express">Express</span>
-                        </div>
-                        <ul class="project-meta">
-                          <li><strong>制作区分:</strong> チーム開発</li>
-                          <li><strong>制作期間:</strong> 2025年3月</li>
-                          <li><strong>役割:</strong> サブリーダー、結合、プレゼン、バックエンド</li>
-                        </ul>
-                        <div class="project-links">
-                          <a href="https://github.com/hakyukawa" class="link-btn" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      <section id="contact" class="content-section">
+        <div class="card">
+          <h2>連絡先</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>kazuyamamoto03@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/keyi1000" target="_blank">github.com/keyi1000</a>
                 </div>
               </div>
-            </section>            <!-- コンタクトセクション -->
-
-            <section id="projects" class="content-section">
-              <div class="projects-grid">
-                <div class="project-card">
-                  <div class="project-content">
-                    <div class="project-layout">
-                      <!-- 画像 -->
-                      <img src="img/Luxon.jpg" alt="Geocation" class="project-image">
-                      <!-- 説明文 -->
-                      <div class="project-description">
-                          <h3 class="url-link">Luxon</h3>
-                        <p class="project-summary">
-                          資格取得を目指し、正確性と即答力を鍛えるwebアプリ。プレイヤーと戦いゲーム形式で楽しみながら学習します。<br>
-                        </p>
-                        <div class="tech-stack">
-                          <span class="tech-tag" data-lang="react">React</span>
-                          <span class="tech-tag" data-lang="go">Go</span>
-                          <span class="tech-tag" data-lang="aws">AWS</span>
-                          <span class="tech-tag" data-lang="mysql">mysql</span>
-                        </div>
-                        <ul class="project-meta">
-                          <li><strong>制作区分:</strong> チーム開発</li>
-                          <li><strong>制作期間:</strong> 2024年9月〜2025年2月</li>
-                          <li><strong>役割:</strong> フロントエンド、サポート</li>
-                          <li><strong>受賞:</strong> 敢闘賞</li>
-                        </ul>
-                        <div class="project-links">
-                          <a href="https://github.com/mod0dethink/kazuyoshi-temp-" class="link-btn" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>            <!-- コンタクトセクション -->
-
-            <section id="projects" class="content-section">
-              <div class="projects-grid">
-                <div class="project-card">
-                  <div class="project-content">
-                    <div class="project-layout">
-                      <!-- 画像 -->
-                      <img src="img/geocation.png" alt="Geocation" class="project-image">
-                      <!-- 説明文 -->
-                      <div class="project-description">
-                          <h3 class="url-link">Geocation</h3>
-                        <p class="project-summary">
-                          オーバーツーリズムを解消するために他の隠れた名所を紹介するWebサイト<br>
-                        </p>
-                        <div class="tech-stack">
-                          <span class="tech-tag" data-lang="htmlcss">HTML・css</span>
-                          <span class="tech-tag" data-lang="javascript">JavaScript</span>
-                          <span class="tech-tag" data-lang="php">php</span>
-                          <span class="tech-tag" data-lang="mysql">mysql</span>
-                          <span class="tech-tag" data-lang="docker">docker</span>
-                        </div>
-                        <ul class="project-meta">
-                          <li><strong>制作区分:</strong> チーム開発</li>
-                          <li><strong>制作期間:</strong> 2024年4月〜2024年7月</li>
-                          <li><strong>役割:</strong> リーダー、結合、要件定義、デザイン、サブリーダー</li>
-                        </ul>
-                        <div class="project-links">
-                          <a href="https://geocation.keyi9029.com/" class="link-btn" target="_blank">
-                            Webサイト
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>            <!-- コンタクトセクション -->
-            <section id="contact" class="content-section">
-                <div class="card">
-                    <h2>連絡先</h2>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>kazuyamamoto03@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/keyi1000" target="_blank">github.com/keyi1000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <script src="scripts/profile.js"></script>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/profile.js"></script>
 </body>
+
 </html>
